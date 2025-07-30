@@ -33,7 +33,7 @@ All colors MUST be HSL.
 
     /* Metallic Gray - #636E72 */
     --muted: 200 7% 42%;
-    --muted-foreground: 0 0% 100%;
+    --muted-foreground: 200 8% 21%;
 
     /* Base Black - #2D3436 */
     --accent: 200 8% 21%;
