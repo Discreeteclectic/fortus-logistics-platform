@@ -13,9 +13,7 @@ import GDP from "./pages/GDP";
 import Clients from "./pages/Clients";
 import Technology from "./pages/Technology";
 import Knowledge from "./pages/Knowledge";
-import News from "./pages/News";
 import Contact from "./pages/Contact";
-import Career from "./pages/Career";
 
 const queryClient = new QueryClient();
 
@@ -35,9 +33,7 @@ const App = () => (
           <Route path="/clients" element={<Clients />} />
           <Route path="/technology" element={<Technology />} />
           <Route path="/knowledge" element={<Knowledge />} />
-          <Route path="/news" element={<News />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/career" element={<Career />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
