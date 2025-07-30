@@ -14,17 +14,29 @@ const Header = () => {
         </div>
         
         <nav className="hidden md:flex flex-1 items-center justify-center space-x-8">
-          <a href="#services" className="text-base font-semibold hover:text-primary transition-colors tracking-wide">
+          <a href="/services" className="text-base font-semibold hover:text-primary transition-colors tracking-wide">
             УСЛУГИ
           </a>
-          <a href="#about" className="text-base font-semibold hover:text-primary transition-colors tracking-wide">
-            О КОМПАНИИ
+          <a href="/about" className="text-base font-semibold hover:text-primary transition-colors tracking-wide">
+            О КОМПАНИИ  
           </a>
-          <a href="#advantages" className="text-base font-semibold hover:text-primary transition-colors tracking-wide">
-            ПРЕИМУЩЕСТВА
+          <a href="/clients" className="text-base font-semibold hover:text-primary transition-colors tracking-wide">
+            КЛИЕНТЫ
           </a>
-          <a href="#contact" className="text-base font-semibold hover:text-primary transition-colors tracking-wide">
+          <a href="/technology" className="text-base font-semibold hover:text-primary transition-colors tracking-wide">
+            ТЕХНОЛОГИИ
+          </a>
+          <a href="/knowledge" className="text-base font-semibold hover:text-primary transition-colors tracking-wide">
+            ЗНАНИЯ
+          </a>
+          <a href="/news" className="text-base font-semibold hover:text-primary transition-colors tracking-wide">
+            НОВОСТИ
+          </a>
+          <a href="/contact" className="text-base font-semibold hover:text-primary transition-colors tracking-wide">
             КОНТАКТЫ
+          </a>
+          <a href="/career" className="text-base font-semibold hover:text-primary transition-colors tracking-wide">
+            КАРЬЕРА
           </a>
         </nav>
 
