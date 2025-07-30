@@ -91,18 +91,27 @@ const Career = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative py-24 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
-        <div className="absolute inset-0 bg-grid-white/10" />
-        <div className="container relative">
-          <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              КАРЬЕРА
+      <section className="pt-32 pb-20 bg-gradient-to-br from-accent via-accent to-primary relative overflow-hidden">
+        {/* Geometric Background Elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-20 left-10 w-20 h-20 border-4 border-white/20 rotate-45"></div>
+          <div className="absolute top-40 right-20 w-32 h-32 rounded-full border-4 border-primary/30"></div>
+          <div className="absolute bottom-20 left-1/4 w-16 h-16 bg-white/10 transform rotate-12"></div>
+          <div className="absolute top-1/2 right-10 w-0 h-0 border-l-[30px] border-l-transparent border-r-[30px] border-r-transparent border-b-[40px] border-b-white/20"></div>
+        </div>
+
+        <div className="container relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-5xl md:text-6xl font-black text-white mb-6 tracking-tight">
+              КАРЬЕРА В <span className="text-primary">FORTIUS</span>
             </h1>
-            <p className="text-xl text-muted-foreground mb-8">
-              Присоединяйтесь к команде профессионалов в области фармацевтической логистики. 
-              Строите карьеру в динамично развивающейся компании.
+            <p className="text-xl text-white/90 leading-relaxed max-w-2xl mx-auto">
+              Присоединяйтесь к команде профессионалов в области фармацевтической логистики. Строите карьеру в динамично развивающейся компании
             </p>
-            <Button size="lg" className="font-semibold">
+            <Button 
+              size="lg" 
+              className="mt-8 bg-white text-accent hover:bg-white/90 font-bold tracking-wide px-8 py-4"
+            >
               ПОСМОТРЕТЬ ВАКАНСИИ
             </Button>
           </div>
