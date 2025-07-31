@@ -12,7 +12,7 @@ import Storage from "./pages/Storage";
 import GDP from "./pages/GDP";
 import Clients from "./pages/Clients";
 import Technology from "./pages/Technology";
-import Knowledge from "./pages/Knowledge";
+
 import Contact from "./pages/Contact";
 
 const queryClient = new QueryClient();
@@ -32,7 +32,7 @@ const App = () => (
           <Route path="/services/gdp" element={<GDP />} />
           <Route path="/clients" element={<Clients />} />
           <Route path="/technology" element={<Technology />} />
-          <Route path="/knowledge" element={<Knowledge />} />
+          
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

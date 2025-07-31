@@ -28,9 +28,6 @@ const Header = () => {
           <a href="/technology" className="text-base font-semibold hover:text-primary transition-colors tracking-wide">
             ТЕХНОЛОГИИ
           </a>
-          <a href="/knowledge" className="text-base font-semibold hover:text-primary transition-colors tracking-wide">
-            ЗНАНИЯ
-          </a>
           <a href="/contact" className="text-base font-semibold hover:text-primary transition-colors tracking-wide">
             КОНТАКТЫ
           </a>
