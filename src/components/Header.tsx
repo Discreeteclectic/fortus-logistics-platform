@@ -10,7 +10,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/bc706c8c-b48f-49ff-a3b4-0aab10eb0c3f.png" 
               alt="Fortius Trade Supplies"
-              className="h-12 w-auto cursor-pointer hover:opacity-80 transition-opacity"
+              className="h-8 w-auto cursor-pointer hover:opacity-80 transition-opacity"
             />
           </a>
         </div>
@@ -34,10 +34,6 @@ const Header = () => {
         </nav>
 
         <div className="flex items-center space-x-4">
-          <div className="hidden sm:flex items-center space-x-4 text-sm">
-            <span className="text-primary font-semibold">+998904040047</span>
-            <span className="text-muted-foreground">fortiustradesupplies@gmail.com</span>
-          </div>
           <Button variant="outline" size="lg" className="hidden sm:flex font-semibold tracking-wide">
             СВЯЗАТЬСЯ С НАМИ
           </Button>

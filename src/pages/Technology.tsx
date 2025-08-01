@@ -109,7 +109,7 @@ const Technology = () => {
       <section className="py-16 bg-muted/50">
         <div className="container">
           <h2 className="text-3xl font-bold text-center mb-12">ДОПОЛНИТЕЛЬНЫЕ ВОЗМОЖНОСТИ</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {features.map((feature, index) => (
               <Card key={index} className="text-center">
                 <CardContent className="pt-8">
@@ -123,32 +123,6 @@ const Technology = () => {
         </div>
       </section>
 
-      {/* Innovation Section */}
-      <section className="py-16">
-        <div className="container">
-          <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6">ИННОВАЦИИ В ЛОГИСТИКЕ</h2>
-            <p className="text-lg text-muted-foreground mb-8">
-              Мы постоянно внедряем новые технологии для повышения качества и безопасности наших услуг. 
-              Наша цель - быть лидером в области технологических решений для фармацевтической логистики.
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">99.9%</div>
-                <p className="text-muted-foreground">Точность доставки</p>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">24/7</div>
-                <p className="text-muted-foreground">Мониторинг</p>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">100%</div>
-                <p className="text-muted-foreground">Соответствие GDP</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <Footer />
     </div>

@@ -150,6 +150,9 @@ const GDP = () => {
                   и безопасности на всех этапах цепи поставок.
                 </p>
                 <p className="text-muted-foreground font-medium">
+                  Наша компания получила сертификат GDP в 2021 году, что подтверждает наше строгое соблюдение всех требований по хранению и дистрибуции фармацевтических препаратов.
+                </p>
+                <p className="text-muted-foreground font-medium">
                   GDP гарантирует, что лекарственные препараты хранятся, транспортируются и 
                   обрабатываются в соответствии с требованиями производителя и регулирующих органов.
                 </p>
@@ -157,22 +160,18 @@ const GDP = () => {
             </div>
 
             <div className="relative">
-              {/* GDP Visualization */}
-              <div className="aspect-square bg-gradient-to-br from-section-alt to-primary/10 rounded-2xl flex items-center justify-center relative overflow-hidden">
-                {/* Geometric decorations */}
-                <div className="absolute top-4 left-4 w-12 h-12 border-4 border-primary/20 rounded-full"></div>
-                <div className="absolute bottom-4 right-4 w-16 h-16 border-4 border-primary/20 transform rotate-45"></div>
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                  <Shield className="h-32 w-32 text-primary/30" />
-                </div>
-                
-                {/* Quality indicators */}
-                <div className="absolute top-8 left-8 right-8 bottom-8 border-2 border-primary/20 rounded-xl">
-                  <div className="absolute top-4 left-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold">
-                    ✓ Сертифицировано
-                  </div>
-                  <div className="absolute bottom-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-bold">
-                    GDP 2023
+              <div className="rounded-2xl overflow-hidden">
+                <img 
+                  src="/src/assets/gdp-warehouse.jpg" 
+                  alt="GDP сертифицированный склад"
+                  className="w-full h-96 object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end">
+                  <div className="p-6 text-white">
+                    <div className="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold mb-2 inline-block">
+                      ✓ GDP Сертифицировано с 2021
+                    </div>
+                    <h3 className="text-lg font-bold">Современный складской комплекс</h3>
                   </div>
                 </div>
               </div>

@@ -6,35 +6,41 @@ import { Building2, Users, TrendingUp, Award } from "lucide-react";
 const Clients = () => {
   const clients = [
     {
-      name: "Pharma Global",
-      logo: "/placeholder.svg",
-      description: "Международная фармацевтическая корпорация",
-      cooperation: "5 лет",
+      name: "Meros Pharm",
+      logo: "/lovable-uploads/b3aa8d09-db81-43a6-a398-9fee4e33659c.png",
+      description: "MChJ",
+      cooperation: "2021г.",
     },
     {
-      name: "MedTech Solutions",
-      logo: "/placeholder.svg", 
-      description: "Производитель медицинского оборудования",
-      cooperation: "3 года",
+      name: "Grand Pharm Trade",
+      logo: "/lovable-uploads/b3aa8d09-db81-43a6-a398-9fee4e33659c.png", 
+      description: "MChJ",
+      cooperation: "2021г.",
     },
     {
-      name: "BioLife Industries",
-      logo: "/placeholder.svg",
-      description: "Биотехнологическая компания",
-      cooperation: "7 лет",
+      name: "Farm Lyuks Invest",
+      logo: "/lovable-uploads/b3aa8d09-db81-43a6-a398-9fee4e33659c.png",
+      description: "ООО",
+      cooperation: "2021г.",
     },
     {
-      name: "HealthCare Plus",
-      logo: "/placeholder.svg",
-      description: "Сеть аптек и медицинских центров",
-      cooperation: "4 года",
+      name: "Young Pharm",
+      logo: "/lovable-uploads/b3aa8d09-db81-43a6-a398-9fee4e33659c.png",
+      description: "MChJ",
+      cooperation: "2022г.",
+    },
+    {
+      name: "Zam-Zam Med Pharm",
+      logo: "/lovable-uploads/b3aa8d09-db81-43a6-a398-9fee4e33659c.png",
+      description: "",
+      cooperation: "2022г.",
     },
   ];
 
   const stats = [
     {
       icon: Building2,
-      value: "150+",
+      value: "4000",
       label: "Активных клиентов",
       color: "text-blue-500",
     },
@@ -49,12 +55,6 @@ const Clients = () => {
       value: "200%",
       label: "Рост за 3 года",
       color: "text-purple-500",
-    },
-    {
-      icon: Award,
-      value: "15+",
-      label: "Наград отрасли",
-      color: "text-orange-500",
     },
   ];
 
@@ -102,7 +102,7 @@ const Clients = () => {
       {/* Statistics */}
       <section className="py-16">
         <div className="container">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {stats.map((stat, index) => (
               <Card key={index} className="text-center">
                 <CardContent className="pt-6">
@@ -120,38 +120,19 @@ const Clients = () => {
       <section className="py-16 bg-muted/50">
         <div className="container">
           <h2 className="text-3xl font-bold text-center mb-12">НАШИ ПАРТНЕРЫ</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
             {clients.map((client, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6 text-center">
+              <Card key={index} className="hover:shadow-lg transition-shadow flex flex-col">
+                <CardContent className="p-6 text-center flex flex-col h-full">
                   <img 
                     src={client.logo} 
                     alt={client.name}
                     className="h-16 w-auto mx-auto mb-4"
                   />
                   <h3 className="font-semibold mb-2">{client.name}</h3>
-                  <p className="text-sm text-muted-foreground mb-2">{client.description}</p>
-                  <p className="text-xs text-primary">Сотрудничество: {client.cooperation}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="py-16">
-        <div className="container">
-          <h2 className="text-3xl font-bold text-center mb-12">ОТЗЫВЫ КЛИЕНТОВ</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <Card key={index}>
-                <CardContent className="p-8">
-                  <p className="text-lg mb-6 italic">"{testimonial.text}"</p>
-                  <div>
-                    <p className="font-semibold">{testimonial.author}</p>
-                    <p className="text-sm text-muted-foreground">{testimonial.position}</p>
-                    <p className="text-sm text-primary">{testimonial.company}</p>
+                  <p className="text-sm text-muted-foreground mb-4 flex-grow">{client.description}</p>
+                  <div className="mt-auto">
+                    <p className="text-xs text-primary">Сотрудничество: {client.cooperation}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -159,6 +140,7 @@ const Clients = () => {
           </div>
         </div>
       </section>
+
 
       <Footer />
     </div>

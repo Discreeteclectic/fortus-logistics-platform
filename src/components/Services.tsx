@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Truck, Package, Shield, Users } from "lucide-react";
 import distributionImage from "@/assets/distribution-center.jpg";
 import storageImage from "@/assets/storage-facility.jpg";
+import warehouseEquipment from "@/assets/warehouse-equipment.jpg";
 
 const Services = () => {
   const services = [
@@ -21,8 +22,8 @@ const Services = () => {
     {
       icon: <Shield className="h-10 w-10 text-primary" />,
       title: "УПРАВЛЕНИЕ ЗАПАСАМИ",
-      description: "Профессиональное управление товарными запасами с использованием современных WMS-систем.",
-      image: null
+      description: "Профессиональное управление товарными запасами с использованием современных WMS-систем. Современное оборудование для эффективного хранения.",
+      image: warehouseEquipment
     },
     {
       icon: <Users className="h-10 w-10 text-primary" />,
