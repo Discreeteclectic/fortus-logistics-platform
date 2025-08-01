@@ -150,7 +150,7 @@ const GDP = () => {
                   и безопасности на всех этапах цепи поставок.
                 </p>
                 <p className="text-muted-foreground font-medium">
-                  Наша компания получила сертификат GDP в 2021 году, что подтверждает наше строгое соблюдение всех требований по хранению и дистрибуции фармацевтических препаратов.
+                  Наша компания получила сертификат GDP в 2024 году, что подтверждает наше строгое соблюдение всех требований по хранению и дистрибуции фармацевтических препаратов.
                 </p>
                 <p className="text-muted-foreground font-medium">
                   GDP гарантирует, что лекарственные препараты хранятся, транспортируются и 
@@ -169,7 +169,7 @@ const GDP = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end">
                   <div className="p-6 text-white">
                     <div className="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold mb-2 inline-block">
-                      ✓ GDP Сертифицировано с 2021
+                      ✓ GDP Сертифицировано с 2024
                     </div>
                     <h3 className="text-lg font-bold">Современный складской комплекс</h3>
                   </div>

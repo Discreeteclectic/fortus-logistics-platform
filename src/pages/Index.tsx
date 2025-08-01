@@ -35,7 +35,7 @@ const Index = () => {
   ];
 
   const stats = [
-    { value: "2021", label: "год основания", icon: <CheckCircle className="h-6 w-6" /> },
+    { value: "2019", label: "год основания", icon: <CheckCircle className="h-6 w-6" /> },
     { value: "4000", label: "клиентов", icon: <Users className="h-6 w-6" /> },
     { value: "GDP", label: "сертификация", icon: <Shield className="h-6 w-6" /> },
     { value: "24/7", label: "контроль качества", icon: <MapPin className="h-6 w-6" /> }
@@ -101,75 +101,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Company Leadership */}
-      <section className="py-20 bg-section-alt">
-        <div className="container">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-black text-accent mb-6">РУКОВОДСТВО КОМПАНИИ</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Опытное руководство обеспечивает высокие стандарты качества
-            </p>
-          </div>
-          
-          <div className="max-w-2xl mx-auto">
-            <Card className="border-0 bg-background p-8 text-center">
-              <CardContent className="p-0">
-                <div className="w-24 h-24 bg-primary rounded-full flex items-center justify-center text-white mx-auto mb-6">
-                  <Users className="h-12 w-12" />
-                </div>
-                <h3 className="text-2xl font-bold text-accent mb-2">Хабибуллаев Амаль Маратович</h3>
-                <p className="text-primary font-semibold mb-4">Руководитель компании</p>
-                <p className="text-muted-foreground">
-                  Опытный специалист в области фармацевтической логистики с многолетним опытом управления проектами в сфере GDP-сертифицированного хранения и дистрибуции лекарственных препаратов.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Major Clients */}
-      <section className="py-20">
-        <div className="container">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-black text-accent mb-6">КРУПНЫЕ КЛИЕНТЫ</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Ведущие фармацевтические компании доверяют нам свою продукцию
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            {[
-              { name: "Meros Pharm", type: "MChJ", year: "2021г." },
-              { name: "Grand Pharm Trade", type: "MChJ", year: "2021г." },
-              { name: "Farm Lyuks Invest", type: "ООО", year: "2021г." },
-              { name: "Young Pharm", type: "MChJ", year: "2022г." },
-              { name: "Zam-Zam Med Pharm", type: "", year: "2022г." }
-            ].map((client, index) => (
-              <Card key={index} className="border-0 bg-section-alt p-6 text-center group hover:shadow-lg transition-all duration-300">
-                <CardContent className="p-0">
-                  <div className="w-16 h-16 bg-primary rounded-xl flex items-center justify-center text-white mx-auto mb-4 group-hover:scale-110 transition-transform">
-                    <Shield className="h-8 w-8" />
-                  </div>
-                  <h3 className="text-lg font-bold text-accent mb-2">{client.name}</h3>
-                  <p className="text-muted-foreground text-sm mb-1">{client.type}</p>
-                  <p className="text-primary font-semibold text-sm">Партнер с {client.year}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-          
-          <div className="text-center">
-            <Card className="inline-block border-0 bg-gradient-to-r from-primary to-accent text-white p-8">
-              <CardContent className="p-0">
-                <div className="text-4xl font-black mb-2">4000+</div>
-                <div className="text-lg font-semibold">Общее количество клиентов</div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-      
       <Advantages />
       
       {/* About Preview Section */}
@@ -222,8 +153,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      <Contact />
       <Footer />
     </div>
   );

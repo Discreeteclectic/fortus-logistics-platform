@@ -9,9 +9,8 @@ import employee3 from "@/assets/employee-3.jpg";
 const About = () => {
   const milestones = [
     { year: "2019", title: "Основание компании", description: "Создание FORTIUS Trade Supply Distribution" },
-    { year: "2021", title: "GDP Сертификация", description: "Получение сертификата GDP" },
     { year: "2022", title: "Расширение складов", description: "Открытие нового логистического центра" },
-    { year: "2024", title: "Обновление сертификации", description: "Подтверждение соответствия стандартам GDP" }
+    { year: "2024", title: "GDP Сертификация", description: "Получение сертификата GDP" }
   ];
 
   const values = [
@@ -149,7 +148,7 @@ const About = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-black text-accent mb-6">КОМАНДА ЭКСПЕРТОВ</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              6 лет на рынке • 4000 клиентов • 1795 кв.м складских площадей
+              Профессиональная команда специалистов фармацевтической логистики
             </p>
           </div>
 

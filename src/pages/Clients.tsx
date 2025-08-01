@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Building2, Users, TrendingUp, Award } from "lucide-react";
+import { Building2, Users, TrendingUp, Award, Shield } from "lucide-react";
 
 const Clients = () => {
   const clients = [
@@ -45,12 +45,6 @@ const Clients = () => {
       color: "text-blue-500",
     },
     {
-      icon: Users,
-      value: "95%",
-      label: "Удовлетворенность клиентов",
-      color: "text-green-500",
-    },
-    {
       icon: TrendingUp,
       value: "200%",
       label: "Рост за 3 года",
@@ -58,20 +52,6 @@ const Clients = () => {
     },
   ];
 
-  const testimonials = [
-    {
-      text: "Fortius обеспечивает безупречную логистику наших фармацевтических продуктов. Их соблюдение GDP стандартов превосходно.",
-      author: "Анна Петрова",
-      position: "Директор по логистике",
-      company: "Pharma Global",
-    },
-    {
-      text: "Надежность и профессионализм команды Fortius позволяют нам сосредоточиться на основном бизнесе, не беспокоясь о доставке.",
-      author: "Михаил Иванов",
-      position: "Генеральный директор",
-      company: "MedTech Solutions",
-    },
-  ];
 
   return (
     <div className="min-h-screen">
@@ -102,7 +82,7 @@ const Clients = () => {
       {/* Statistics */}
       <section className="py-16">
         <div className="container">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {stats.map((stat, index) => (
               <Card key={index} className="text-center">
                 <CardContent className="pt-6">
@@ -123,18 +103,16 @@ const Clients = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
             {clients.map((client, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow flex flex-col">
-                <CardContent className="p-6 text-center flex flex-col h-full">
-                  <img 
-                    src={client.logo} 
-                    alt={client.name}
-                    className="h-16 w-auto mx-auto mb-4"
-                  />
-                  <h3 className="font-semibold mb-2">{client.name}</h3>
-                  <p className="text-sm text-muted-foreground mb-4 flex-grow">{client.description}</p>
-                  <div className="mt-auto">
-                    <p className="text-xs text-primary">Сотрудничество: {client.cooperation}</p>
-                  </div>
-                </CardContent>
+                 <CardContent className="p-6 text-center flex flex-col h-full">
+                   <div className="w-16 h-16 bg-red-500 rounded-xl flex items-center justify-center text-white mx-auto mb-4">
+                     <Shield className="h-8 w-8" />
+                   </div>
+                   <h3 className="font-semibold mb-2 flex-grow">{client.name}</h3>
+                   <p className="text-sm text-muted-foreground mb-2">{client.description}</p>
+                   <div className="mt-auto">
+                     <p className="text-xs text-primary">Партнер с {client.cooperation}</p>
+                   </div>
+                 </CardContent>
               </Card>
             ))}
           </div>
