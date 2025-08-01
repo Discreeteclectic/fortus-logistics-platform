@@ -38,11 +38,6 @@ const Technology = () => {
 
   const features = [
     {
-      title: "Мобильное приложение",
-      description: "Управление поставками через мобильное приложение",
-      icon: Smartphone,
-    },
-    {
       title: "Интеграция с ERP",
       description: "Подключение к корпоративным системам клиентов",
       icon: Database,
@@ -76,12 +71,6 @@ const Technology = () => {
             <p className="text-xl text-white/90 leading-relaxed max-w-2xl mx-auto">
               Современные технологические решения для безопасной и эффективной доставки фармацевтических препаратов
             </p>
-            <Button 
-              size="lg" 
-              className="mt-8 bg-white text-accent hover:bg-white/90 font-bold tracking-wide px-8 py-4"
-            >
-              ЗАПРОСИТЬ ДЕМО
-            </Button>
           </div>
         </div>
       </section>

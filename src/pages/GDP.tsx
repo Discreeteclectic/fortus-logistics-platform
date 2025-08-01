@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Shield, Award, FileCheck, Eye, Users, BookOpen, CheckCircle, AlertTriangle } from "lucide-react";
+import { Shield, Award, FileCheck, Eye, Users, CheckCircle, AlertTriangle } from "lucide-react";
 
 const GDP = () => {
   const gdpPrinciples = [
@@ -15,7 +15,7 @@ const GDP = () => {
     {
       icon: <Users className="h-8 w-8" />,
       title: "Персонал",
-      description: "Обученный и квалифицированный персонал",
+      description: "Квалифицированный персонал",
       color: "bg-accent"
     },
     {
@@ -75,11 +75,6 @@ const GDP = () => {
       description: "Расследование и документирование всех отклонений"
     },
     {
-      icon: <BookOpen className="h-6 w-6" />,
-      title: "Обучение",
-      description: "Регулярное обучение персонала стандартам GDP"
-    },
-    {
       icon: <Award className="h-6 w-6" />,
       title: "Аудиты",
       description: "Внутренние и внешние аудиты системы качества"
@@ -97,14 +92,6 @@ const GDP = () => {
     "Документирование всех операций"
   ];
 
-  const trainingPrograms = [
-    "Основы GDP и требования законодательства",
-    "Холодовая цепь и контроль температуры",
-    "Работа с наркотическими препаратами",
-    "Система прослеживаемости лекарств",
-    "Процедуры работы в чрезвычайных ситуациях",
-    "Документооборот и ведение записей"
-  ];
 
   return (
     <div className="min-h-screen">
@@ -316,65 +303,6 @@ const GDP = () => {
         </div>
       </section>
 
-      {/* Training Section */}
-      <section className="py-24 bg-section-alt relative overflow-hidden">
-        {/* Background decorations */}
-        <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-20 w-24 h-24 border-8 border-primary/10 rounded-full"></div>
-          <div className="absolute bottom-1/4 right-20 w-32 h-32 border-4 border-accent/10 transform rotate-45"></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-primary/5 rounded-full"></div>
-        </div>
-
-        <div className="container relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-4xl font-black text-accent mb-8">ОБУЧЕНИЕ ПЕРСОНАЛА</h2>
-              <p className="text-lg text-muted-foreground mb-8">
-                Регулярные программы обучения для поддержания высоких стандартов качества 
-                и соответствия требованиям GDP.
-              </p>
-              
-              <ul className="space-y-4">
-                {trainingPrograms.map((program, index) => (
-                  <li key={index} className="flex items-start space-x-4 group">
-                    <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center mt-1 group-hover:scale-110 transition-transform">
-                      <BookOpen className="w-4 h-4 text-white" />
-                    </div>
-                    <span className="text-muted-foreground font-medium">{program}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="grid grid-cols-2 gap-6">
-              <Card className="border-0 bg-background p-6 text-center">
-                <CardContent className="p-0">
-                  <div className="text-3xl font-black text-primary mb-2">40+</div>
-                  <div className="text-sm text-muted-foreground uppercase tracking-wide">Часов обучения</div>
-                </CardContent>
-              </Card>
-              <Card className="border-0 bg-background p-6 text-center">
-                <CardContent className="p-0">
-                  <div className="text-3xl font-black text-primary mb-2">100%</div>
-                  <div className="text-sm text-muted-foreground uppercase tracking-wide">Сотрудников</div>
-                </CardContent>
-              </Card>
-              <Card className="border-0 bg-background p-6 text-center">
-                <CardContent className="p-0">
-                  <div className="text-3xl font-black text-primary mb-2">4x</div>
-                  <div className="text-sm text-muted-foreground uppercase tracking-wide">В год</div>
-                </CardContent>
-              </Card>
-              <Card className="border-0 bg-background p-6 text-center">
-                <CardContent className="p-0">
-                  <div className="text-3xl font-black text-primary mb-2">GDP</div>
-                  <div className="text-sm text-muted-foreground uppercase tracking-wide">Сертификация</div>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="py-24 bg-gradient-to-r from-primary-dark to-primary relative overflow-hidden">

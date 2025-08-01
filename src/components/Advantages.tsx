@@ -51,8 +51,8 @@ const Advantages = () => {
           {advantages.map((advantage, index) => (
             <Card key={index} className="group border-0 bg-background hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <CardHeader className="text-center pb-4">
-                <div className="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
-                  <div className="group-hover:text-white transition-colors">
+                <div className="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4 group-hover:scale-125 transition-all duration-300">
+                  <div className="text-primary transition-colors">
                     {advantage.icon}
                   </div>
                 </div>

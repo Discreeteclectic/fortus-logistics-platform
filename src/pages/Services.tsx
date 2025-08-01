@@ -40,7 +40,7 @@ const Services = () => {
       features: [
         "Сертифицированные процессы",
         "Валидация оборудования",
-        "Обучение персонала",
+        "Контроль качества",
         "Документооборот по стандартам"
       ],
       link: "/services/gdp",
@@ -121,7 +121,7 @@ const Services = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {mainServices.map((service, index) => (
-              <Card key={index} className="border-0 bg-section-alt group hover:shadow-2xl transition-all duration-500 hover:scale-105 relative overflow-hidden">
+              <Card key={index} className="border-0 bg-section-alt group hover:shadow-2xl transition-all duration-500 hover:scale-105 relative overflow-hidden flex flex-col">
                 {/* Geometric decoration */}
                 <div className={`absolute top-0 right-0 w-24 h-24 ${service.color} opacity-10 transform rotate-45 translate-x-12 -translate-y-12 group-hover:opacity-20 transition-opacity`}></div>
                 
@@ -137,8 +137,8 @@ const Services = () => {
                   </p>
                 </CardHeader>
                 
-                <CardContent>
-                  <ul className="space-y-3 mb-8">
+                <CardContent className="flex flex-col flex-grow">
+                  <ul className="space-y-3 mb-8 flex-grow">
                     {service.features.map((feature, idx) => (
                       <li key={idx} className="flex items-center space-x-3">
                         <div className="w-2 h-2 bg-primary rounded-full"></div>
@@ -147,12 +147,14 @@ const Services = () => {
                     ))}
                   </ul>
                   
-                  <Link to={service.link}>
-                    <Button className={`w-full ${service.color} hover:opacity-90 text-white font-bold tracking-wide group/btn`}>
-                      Подробнее
-                      <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
-                    </Button>
-                  </Link>
+                  <div className="mt-auto">
+                    <Link to={service.link}>
+                      <Button className={`w-full ${service.color} hover:opacity-90 text-white font-bold tracking-wide group/btn`}>
+                        Подробнее
+                        <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
+                      </Button>
+                    </Link>
+                  </div>
                 </CardContent>
               </Card>
             ))}
@@ -214,9 +216,6 @@ const Services = () => {
               Получите индивидуальный расчёт стоимости наших услуг
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-accent hover:bg-white/90 font-bold tracking-wide px-8 py-4">
-                Рассчитать стоимость
-              </Button>
               <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-accent font-bold tracking-wide px-8 py-4">
                 Получить консультацию
               </Button>

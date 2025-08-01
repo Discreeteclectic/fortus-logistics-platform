@@ -72,12 +72,7 @@ const Index = () => {
                     {service.description}
                   </p>
                   
-                  <Link to={service.link}>
-                    <Button className={`w-full ${service.color} hover:opacity-90 text-white font-bold tracking-wide group/btn`}>
-                      Подробнее
-                      <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
-                    </Button>
-                  </Link>
+                  {/* Убрали кнопку "Подробнее" - карточки остаются динамичными при наведении */}
                 </CardContent>
               </Card>
             ))}
@@ -127,11 +122,11 @@ const Index = () => {
                 </p>
                 <p className="text-muted-foreground font-medium">
                   Мы стремимся быть надёжным партнёром для фармацевтических компаний, 
-                  обеспечивая целостность холодовой цепи и качество обслуживания.
+                  обеспечивая безопасность и качество обслуживания.
                 </p>
               </div>
               <Link to="/about">
-                <Button size="lg" className="mt-8 bg-primary hover:bg-primary-dark text-white font-bold tracking-wide px-8 py-4">
+                <Button size="lg" className="mt-8 bg-primary hover:bg-primary-dark text-white font-bold tracking-wide px-8 py-4" onClick={() => window.scrollTo(0, 0)}>
                   Узнать больше о компании
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
@@ -142,7 +137,7 @@ const Index = () => {
               {[
                 { icon: <Shield className="h-8 w-8" />, title: "Качество", description: "Соблюдение стандартов GDP" },
                 { icon: <Users className="h-8 w-8" />, title: "Партнёрство", description: "Долгосрочные отношения" },
-                { icon: <CheckCircle className="h-8 w-8" />, title: "Надёжность", description: "Холодовая цепь 24/7" },
+                { icon: <CheckCircle className="h-8 w-8" />, title: "Надёжность", description: "Проверенные решения" },
                 { icon: <MapPin className="h-8 w-8" />, title: "Экспертиза", description: "Знания фармрынка" }
               ].map((value, index) => (
                 <Card key={index} className="p-6 border-0 bg-background text-center group hover:shadow-lg transition-all duration-300">
