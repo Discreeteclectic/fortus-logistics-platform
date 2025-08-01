@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
             <img 
-              src="/lovable-uploads/075401bb-7f23-4a4b-ba19-6f3d7222cdc6.png" 
+              src="/lovable-uploads/bc706c8c-b48f-49ff-a3b4-0aab10eb0c3f.png" 
               alt="Fortius Trade Supplies"
               className="h-8 w-auto mb-4 brightness-0 invert"
             />
@@ -31,9 +31,9 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Контакты</h4>
             <ul className="space-y-2 text-gray-300">
-              <li>+7 (495) 123-45-67</li>
-              <li>info@fortius-trade.ru</li>
-              <li>Москва, ул. Логистическая, 15</li>
+              <li>+998904040047</li>
+              <li>fortiustradesupplies@gmail.com</li>
+              <li>г. Ташкент, Чиланзарский район, ул. Катартал, 38</li>
             </ul>
           </div>
         </div>

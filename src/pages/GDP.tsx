@@ -34,22 +34,20 @@ const GDP = () => {
 
   const certificates = [
     {
-      title: "GDP Сертификат Министерства Здравоохранения",
-      validity: "Действителен до 2025",
-      scope: "Хранение и дистрибуция лекарственных препаратов",
-      number: "GDP-UZ-2023-001"
-    },
-    {
-      title: "ISO 9001:2015",
-      validity: "Действителен до 2026",
-      scope: "Система менеджмента качества",
-      number: "ISO-9001-2023-FTS"
+      title: "GDP Сертификат",
+      validity: "Действителен с 01.07.2024 по 30.06.2027",
+      scope: "Надлежащая дистрибьюторская практика фармацевтических препаратов",
+      number: "GDP-83:2024",
+      issued_by: "Zarur amaliyotlar markazi davlat muassasasi",
+      image: "/gdp-certificate-page1.png"
     },
     {
       title: "Лицензия на фармацевтическую деятельность",
-      validity: "Действительна до 2027",
+      validity: "Действительна с 19.01.2021 по 30.12.2025",
       scope: "Оптовая торговля лекарственными препаратами",
-      number: "LIC-PHARM-2023-045"
+      number: "031316",
+      issued_by: "Министерство развития фармацевтической отрасли Республики Узбекистан",
+      image: "/pharmaceutical-license.png"
     }
   ];
 
@@ -127,7 +125,7 @@ const GDP = () => {
                 <div className="text-white/80 text-sm uppercase tracking-wide">Соответствие</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-black text-white mb-2">2023</div>
+                <div className="text-3xl font-black text-white mb-2">2024</div>
                 <div className="text-white/80 text-sm uppercase tracking-wide">Сертификат</div>
               </div>
               <div className="text-center">
@@ -224,7 +222,7 @@ const GDP = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {certificates.map((cert, index) => (
               <Card key={index} className="border-0 bg-background p-8 group hover:shadow-xl transition-all duration-300 relative overflow-hidden">
                 {/* Geometric decoration */}
@@ -251,6 +249,20 @@ const GDP = () => {
                       <span className="text-sm font-semibold text-primary">Номер:</span>
                       <p className="text-muted-foreground font-mono text-sm">{cert.number}</p>
                     </div>
+                    <div>
+                      <span className="text-sm font-semibold text-primary">Выдан:</span>
+                      <p className="text-muted-foreground text-sm">{cert.issued_by}</p>
+                    </div>
+                    {cert.image && (
+                      <div className="mt-4">
+                        <img 
+                          src={cert.image} 
+                          alt={cert.title}
+                          className="w-full h-48 object-contain border border-border rounded-lg cursor-pointer hover:shadow-lg transition-shadow"
+                          onClick={() => window.open(cert.image, '_blank')}
+                        />
+                      </div>
+                    )}
                   </div>
                 </CardContent>
               </Card>
@@ -323,9 +335,6 @@ const GDP = () => {
               Гарантируем соблюдение всех требований GDP при работе с вашей продукцией
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-primary hover:bg-white/90 font-bold tracking-wide px-8 py-4">
-                Скачать сертификаты
-              </Button>
               <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary font-bold tracking-wide px-8 py-4">
                 Получить консультацию
               </Button>

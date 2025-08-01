@@ -16,7 +16,7 @@ const Advantages = () => {
     {
       icon: <HeadphonesIcon className="h-8 w-8 text-primary" />,
       title: "Клиентский сервис",
-      description: "Персональный менеджер и круглосуточная поддержка для решения любых вопросов."
+      description: "Персональный менеджер для решения любых вопросов и профессиональные консультации."
     },
     {
       icon: <MapPin className="h-8 w-8 text-primary" />,

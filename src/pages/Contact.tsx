@@ -42,10 +42,10 @@ const Contact = () => {
       description: "Вопросы по услугам, расчет стоимости, заключение договоров",
     },
     {
-      name: "Служба поддержки",
-      phone: "+7 (495) 123-45-68",
-      email: "support@fortius-trade.ru",
-      description: "Техническая поддержка, отслеживание заказов, жалобы",
+      name: "Отдел продаж",
+      phone: "+998904040047",
+      email: "fortiustradesupplies@gmail.com",
+      description: "Информация о услугах, расчет стоимости, заключение договоров",
     },
     {
       name: "Отдел качества",
@@ -107,14 +107,6 @@ const Contact = () => {
                 <p className="text-lg font-semibold">info@fortius-trade.ru</p>
               </CardContent>
             </Card>
-            <Card className="text-center">
-              <CardContent className="pt-8">
-                <MessageSquare className="h-12 w-12 mx-auto mb-4 text-primary" />
-                <h3 className="text-xl font-semibold mb-2">Онлайн-чат</h3>
-                <p className="text-muted-foreground mb-2">Быстрая поддержка</p>
-                <Button className="mt-2">Начать чат</Button>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>
@@ -155,7 +147,7 @@ const Contact = () => {
                         <option>Выберите тему</option>
                         <option>Запрос коммерческого предложения</option>
                         <option>Вопросы по услугам</option>
-                        <option>Техническая поддержка</option>
+                        <option>Консультации по услугам</option>
                         <option>Партнерство</option>
                         <option>Другое</option>
                       </select>
