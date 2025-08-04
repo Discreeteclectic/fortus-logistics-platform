@@ -1,9 +1,6 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle, TrendingUp, Globe, Clock } from "lucide-react";
-import employee1 from "@/assets/employee-1.jpg";
-import employee2 from "@/assets/employee-2.jpg";
-import employee3 from "@/assets/employee-3.jpg";
 
 const About = () => {
   const stats = [
@@ -15,22 +12,29 @@ const About = () => {
 
   const employees = [
     {
-      name: "Алексей Петров",
-      position: "Руководитель склада",
-      description: "Отвечает за организацию складских процессов и контроль качества. Обеспечивает эффективную работу команды и соблюдение стандартов безопасности.",
-      image: employee1
+      name: "Хабиббулаев Амаль",
+      position: "Директор",
+      description: "Руководит стратегическим развитием компании и обеспечивает соблюдение международных стандартов GDP."
     },
     {
-      name: "Мария Иванова", 
-      position: "Менеджер по логистике",
-      description: "Координирует цепочки поставок и оптимизирует маршруты доставки. Работает с клиентами над индивидуальными логистическими решениями.",
-      image: employee2
+      name: "Муминов Азим", 
+      position: "Учредитель",
+      description: "Основатель компании и главный идеолог развития фармацевтической логистики в Узбекистане."
     },
     {
-      name: "Дмитрий Козлов",
-      position: "Водитель-экспедитор",
-      description: "Обеспечивает своевременную и безопасную доставку грузов клиентам. Поддерживает высокие стандарты обслуживания на всех этапах транспортировки.",
-      image: employee3
+      name: "Межлумов Григорий",
+      position: "Начальник отдела продаж",
+      description: "Отвечает за развитие клиентской базы и построение партнерских отношений с дистрибьюторами."
+    },
+    {
+      name: "Машрабов Тохир",
+      position: "Начальник логистики",
+      description: "Координирует транспортировку и обеспечивает работу холодовой цепи по Узбекистану."
+    },
+    {
+      name: "Каюмов Азиз",
+      position: "Заведующий складом", 
+      description: "Контролирует складские операции и соблюдение стандартов GDP при хранении препаратов."
     }
   ];
 
@@ -91,16 +95,9 @@ const About = () => {
           <h3 className="text-3xl font-black text-accent mb-12 text-center tracking-tight">
             НАША КОМАНДА
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {employees.map((employee, index) => (
               <Card key={index} className="border-0 bg-section-alt overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-105">
-                <div className="aspect-square overflow-hidden">
-                  <img 
-                    src={employee.image}
-                    alt={employee.name}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
                 <CardContent className="p-6">
                   <h4 className="text-xl font-bold text-accent mb-2">{employee.name}</h4>
                   <p className="text-primary font-semibold mb-4 uppercase tracking-wide text-sm">
