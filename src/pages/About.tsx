@@ -2,9 +2,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle, Award, Users, MapPin, Shield, Clock } from "lucide-react";
-import employee1 from "@/assets/employee-1.jpg";
-import employee2 from "@/assets/employee-2.jpg";
-import employee3 from "@/assets/employee-3.jpg";
 
 const About = () => {
   const milestones = [
@@ -22,22 +19,29 @@ const About = () => {
 
   const team = [
     {
-      name: "Алексей Петров",
-      position: "Генеральный директор",
-      description: "15 лет опыта в фармацевтической логистике. Специалист по международным стандартам GDP.",
-      image: employee1
+      name: "Хабиббулаев Амаль",
+      position: "Директор",
+      description: "Руководит стратегическим развитием компании и обеспечивает соблюдение международных стандартов GDP."
     },
     {
-      name: "Мария Иванова",
-      position: "Директор по качеству",
-      description: "Сертифицированный аудитор GDP. Отвечает за соблюдение всех требований к качеству.",
-      image: employee2
+      name: "Муминов Азим",
+      position: "Учредитель", 
+      description: "Основатель компании и главный идеолог развития фармацевтической логистики в Узбекистане."
     },
     {
-      name: "Дмитрий Козлов",
-      position: "Руководитель логистики",
-      description: "Эксперт по холодовой цепи. Обеспечивает безопасную доставку температурно-чувствительных препаратов.",
-      image: employee3
+      name: "Межлумов Григорий",
+      position: "Начальник отдела продаж",
+      description: "Отвечает за развитие клиентской базы и построение партнерских отношений с дистрибьюторами."
+    },
+    {
+      name: "Машрабов Тохир",
+      position: "Начальник логистики",
+      description: "Координирует транспортировку и обеспечивает работу холодовой цепи по Узбекистану."
+    },
+    {
+      name: "Каюмов Азиз",
+      position: "Заведующий складом",
+      description: "Контролирует складские операции и соблюдение стандартов GDP при хранении препаратов."
     }
   ];
 
@@ -152,18 +156,9 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             {team.map((member, index) => (
               <Card key={index} className="border-0 bg-section-alt overflow-hidden group hover:shadow-xl transition-all duration-300">
-                <div className="aspect-square overflow-hidden relative">
-                  <img 
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  {/* Geometric overlay */}
-                  <div className="absolute bottom-0 right-0 w-16 h-16 bg-primary/80 transform rotate-45 translate-x-8 translate-y-8"></div>
-                </div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-accent mb-2">{member.name}</h3>
                   <p className="text-primary font-semibold mb-4 uppercase tracking-wide text-sm">
