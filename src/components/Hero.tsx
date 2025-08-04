@@ -74,14 +74,6 @@ const Hero = () => {
                       </p>
                     </div>
                     
-                    <div className="flex flex-col sm:flex-row gap-6 pt-4">
-                      <Button size="lg" className="bg-primary hover:bg-primary-dark text-white text-lg px-12 py-6 font-bold tracking-wide uppercase">
-                        Получить консультацию
-                      </Button>
-                      <Button variant="outline" size="lg" className="text-lg px-12 py-6 border-2 border-white text-white hover:bg-white hover:text-accent font-bold tracking-wide uppercase">
-                        Наши услуги
-                      </Button>
-                    </div>
                   </div>
                 </div>
               </div>
