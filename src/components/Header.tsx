@@ -33,11 +33,6 @@ const Header = () => {
           </a>
         </nav>
 
-        <div className="flex items-center space-x-4">
-          <Button variant="outline" size="lg" className="hidden sm:flex font-semibold tracking-wide">
-            СВЯЗАТЬСЯ С НАМИ
-          </Button>
-        </div>
       </div>
     </header>
   );
