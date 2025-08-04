@@ -198,31 +198,6 @@ const Services = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-r from-accent to-primary relative overflow-hidden">
-        {/* Geometric elements */}
-        <div className="absolute inset-0">
-          <div className="absolute top-10 left-10 w-20 h-20 border-4 border-white/20 transform rotate-45"></div>
-          <div className="absolute bottom-10 right-10 w-24 h-24 rounded-full border-4 border-white/20"></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-white/5 rounded-full"></div>
-        </div>
-
-        <div className="container relative z-10">
-          <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-4xl font-black text-white mb-6">
-              ГОТОВЫ НАЧАТЬ СОТРУДНИЧЕСТВО?
-            </h2>
-            <p className="text-xl text-white/90 mb-8">
-              Получите индивидуальный расчёт стоимости наших услуг
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-accent font-bold tracking-wide px-8 py-4">
-                Получить консультацию
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <Footer />
     </div>
