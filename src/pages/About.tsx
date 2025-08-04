@@ -156,20 +156,58 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            {team.map((member, index) => (
-              <Card key={index} className="border-0 bg-section-alt overflow-hidden group hover:shadow-xl transition-all duration-300">
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-accent mb-2">{member.name}</h3>
-                  <p className="text-primary font-semibold mb-4 uppercase tracking-wide text-sm">
-                    {member.position}
-                  </p>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    {member.description}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
+          {/* Pyramid layout */}
+          <div className="mb-16">
+            {/* Top row - 1 card (Director) */}
+            <div className="flex justify-center mb-8">
+              <div className="w-full max-w-sm">
+                <Card className="border-0 bg-section-alt overflow-hidden group hover:shadow-xl transition-all duration-300">
+                  <CardContent className="p-6">
+                    <h3 className="text-xl font-bold text-accent mb-2">{team[0].name}</h3>
+                    <p className="text-primary font-semibold mb-4 uppercase tracking-wide text-sm">
+                      {team[0].position}
+                    </p>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      {team[0].description}
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+
+            {/* Middle row - 2 cards (Founder and Sales Head) */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-8">
+              {team.slice(1, 3).map((member, index) => (
+                <Card key={index + 1} className="border-0 bg-section-alt overflow-hidden group hover:shadow-xl transition-all duration-300">
+                  <CardContent className="p-6">
+                    <h3 className="text-xl font-bold text-accent mb-2">{member.name}</h3>
+                    <p className="text-primary font-semibold mb-4 uppercase tracking-wide text-sm">
+                      {member.position}
+                    </p>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      {member.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+
+            {/* Bottom row - 2 cards (Logistics Head and Warehouse Manager) */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              {team.slice(3, 5).map((member, index) => (
+                <Card key={index + 3} className="border-0 bg-section-alt overflow-hidden group hover:shadow-xl transition-all duration-300">
+                  <CardContent className="p-6">
+                    <h3 className="text-xl font-bold text-accent mb-2">{member.name}</h3>
+                    <p className="text-primary font-semibold mb-4 uppercase tracking-wide text-sm">
+                      {member.position}
+                    </p>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      {member.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
 
           {/* Statistics */}
