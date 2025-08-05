@@ -136,7 +136,7 @@ const Storage = () => {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-8 mt-12 max-w-2xl mx-auto">
               <div className="text-center">
-                <div className="text-3xl font-black text-white mb-2">15,000м²</div>
+                <div className="text-3xl font-black text-white mb-2">1,795м²</div>
                 <div className="text-white/80 text-sm uppercase tracking-wide">Площадь складов</div>
               </div>
               <div className="text-center">
